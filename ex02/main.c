@@ -49,7 +49,7 @@ int	main(void)
 	printf("Obtained dest: %s\n", s2_test2_o);
 	printf("----------------------------------------------------------------\n");
 
-	printf("\n--------------------------TEST 4------------------------------\n");
+	printf("\n--------------------------TEST 3------------------------------\n");
 	printf("src: %s \n", s1_test3_o);
 	printf("dest: %s \n", s2_test3_o);
 	strcat(s2_test3_e, s1_test3_e);
@@ -71,7 +71,7 @@ int	main(void)
 	
 	printf("\n--------------------------TEST 5------------------------------\n");
 	printf("src: %s \n", s1_test5_o);
-	printf("dest: %s \n", s1_test5_o);
+	printf("dest: %s \n", s2_test5_o);
 	strcat(s2_test5_e, s1_test5_e);
 	ft_strcat(s2_test5_o, s1_test5_o);
 	printf("Expected dest: %s\n", s2_test5_e);
@@ -81,7 +81,7 @@ int	main(void)
 
 	printf("\n--------------------------TEST 6------------------------------\n");
 	printf("src: %s \n", s1_test6_o);
-	printf("dest: %s \n", s1_test6_o);
+	printf("dest: %s \n", s2_test6_o);
 	strcat(s2_test6_e, s1_test6_e);
 	ft_strcat(s2_test6_o, s1_test6_o);
 	printf("Expected dest: %s\n", s2_test6_e);
