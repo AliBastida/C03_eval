@@ -19,7 +19,7 @@ int	main(void)
 	char	*s2_test6 = "f4743gttgg5 984h8 g898hg";
 	int		cmp_obt;
 	int 	cmp_exp;
-	printf("Info: Test passes if both strcmp and ft_strcmp are negative, 0 or positive. It does not check if the values coincide.\n"
+	printf("Info: Test passes if both strcmp and ft_strcmp are negative, 0 or positive. It does not check if the values coincide.\n");
 	printf("\n--------------------------TEST 1------------------------------\n");
 	printf("s1: %s \n", s1_test1);
 	printf("s2: %s \n", s2_test1);
