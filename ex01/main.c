@@ -22,18 +22,13 @@ int	main(void)
 	unsigned int	n;
 
 	n = 3;
-	printf("Info: Test passes if both strncmp and ft_strncmp are negative, 0 or positive. It does not check if the values coincide.\n");
 	printf("\n--------------------------TEST 1------------------------------\n");
 	printf("s1: %s \n", s1_test1);
 	printf("s2: %s \n", s2_test1);
 	printf("n = %d \n", n); 
 	cmp_exp = strncmp(s1_test1, s2_test1, n);
 	cmp_obt = ft_strncmp(s1_test1, s2_test1, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
+	if (cmp_exp == cmp_obt)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -46,11 +41,7 @@ int	main(void)
 	printf("n = %d \n", n);
 	cmp_exp = strncmp(s1_test2, s2_test2, n);
 	cmp_obt = ft_strncmp(s1_test2, s2_test2, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
+	if (cmp_exp == cmp_obt)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -63,12 +54,8 @@ int	main(void)
 	printf("n = %d \n", n);
 	cmp_exp = strncmp(s1_test3, s2_test3, n);
 	cmp_obt = ft_strncmp(s1_test3, s2_test3, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
+	if (cmp_exp == cmp_obt)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt );
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
 	printf("----------------------------------------------------------------\n");
@@ -80,11 +67,7 @@ int	main(void)
 	printf("n = %d \n", n);
 	cmp_exp = strncmp(s1_test4, s2_test4, n);
 	cmp_obt = ft_strncmp(s1_test4, s2_test4, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
+	if (cmp_exp == cmp_obt)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -99,10 +82,6 @@ int	main(void)
 	cmp_obt = ft_strncmp(s1_test5, s2_test5, n);
 	if (cmp_exp < 0 && cmp_obt < 0)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
 	printf("----------------------------------------------------------------\n");
@@ -114,11 +93,7 @@ int	main(void)
 	printf("n = %d \n", n);
 	cmp_exp = strncmp(s1_test6, s2_test6, n);
 	cmp_obt = ft_strncmp(s1_test6, s2_test6, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp == 0 && cmp_obt == 0)
-		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
-	else if (cmp_exp > 0 && cmp_obt > 0)
+	if (cmp_exp == cmp_obt)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
