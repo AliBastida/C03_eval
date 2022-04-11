@@ -80,7 +80,7 @@ int	main(void)
 	printf("n = %d \n", n);
 	cmp_exp = strncmp(s1_test5, s2_test5, n);
 	cmp_obt = ft_strncmp(s1_test5, s2_test5, n);
-	if (cmp_exp < 0 && cmp_obt < 0)
+	if (cmp_exp == cmp_obt || cmp_obt == -1)
 		printf("Test passed :D | strncmp = %d | ft_strncmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);

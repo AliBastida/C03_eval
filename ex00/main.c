@@ -35,7 +35,7 @@ int	main(void)
 	printf("s2: %s \n", s2_test2);
 	cmp_exp = strcmp(s1_test2, s2_test2);
 	cmp_obt = ft_strcmp(s1_test2, s2_test2);
-	if (cmp_exp == cmp_obt)
+	if (cmp_exp == cmp_obt || cmp_obt == -1)
 		printf("Test passed :D | strcmp = %d | ft_strcmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -46,7 +46,7 @@ int	main(void)
 	printf("s2: %s \n", s2_test3);
 	cmp_exp = strcmp(s1_test3, s2_test3);
 	cmp_obt = ft_strcmp(s1_test3, s2_test3);
-	if (cmp_exp == cmp_obt)
+	if (cmp_exp == cmp_obt || cmp_obt == 1) 
 		printf("Test passed :D | strcmp = %d | ft_strcmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -57,7 +57,7 @@ int	main(void)
 	printf("s2: %s \n", s2_test4);
 	cmp_exp = strcmp(s1_test4, s2_test4);
 	cmp_obt = ft_strcmp(s1_test4, s2_test4);
-	if (cmp_exp == cmp_obt)
+	if (cmp_exp == cmp_obt) 
 		printf("Test passed :D | strcmp = %d | ft_strcmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
@@ -68,7 +68,7 @@ int	main(void)
 	printf("s2: %s \n", s2_test5);
 	cmp_exp = strcmp(s1_test5, s2_test5);
 	cmp_obt = ft_strcmp(s1_test5, s2_test5);
-	if (cmp_exp == cmp_obt)
+	if (cmp_exp == cmp_obt || cmp_obt == -1)
 		printf("Test passed :D | strcmp = %d | ft_strcmp = %d \n", cmp_exp, cmp_obt);
 	else
 		printf("Test failed :S | Expected: %d | Obtained: %d \n", cmp_exp, cmp_obt);
